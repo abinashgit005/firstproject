@@ -9,6 +9,10 @@ jobs:
     firstjob:
         runs-on: ubuntu-latest
         steps:
+        # using checkout actions 
+        - name: checkout
+          uses: actions/checkout@v4
+
         - name: welcome Message
           run: echo "My First Github workflow"
 
