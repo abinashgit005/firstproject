@@ -1,0 +1,19 @@
+# Name of the workflow
+name: my first workflow
+
+# This is a trigger
+on: push
+
+# you can set multiple jobs
+jobs:
+    firstjob:
+        runs-on: ubuntu-latest
+        steps:
+        - name: welcome Message
+          run: echo "My First Github workflow"
+
+        - name: List Files
+          run: ls
+
+        - name: Read Files
+          run: cat README.md
