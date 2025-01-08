@@ -19,7 +19,4 @@ jobs:
             ls -lart
             cat README.md
         
-        - name: read txt file
-          run: |
-            cat readtext.txt
 
