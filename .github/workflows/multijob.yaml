@@ -12,12 +12,17 @@ jobs:
             - name: upload to artifact
               uses: actions/upload-artifact@v4
               with:
-                name: helloworld text file
+                name: helloworld-text-file
                 path: helloworld.txt
     job2:
         runs-on: ubuntu-latest
         needs: job1
         steps:
+            - name: download to artifact
+              uses: actions/download-artifact@v4
+              with:
+                name: helloworld-text-file
+                # path: helloworld.txt   ##path is not required only file name is enough
             - name: go to files
               run: |
                 cat helloworld.txt
