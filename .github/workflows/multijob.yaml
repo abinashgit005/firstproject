@@ -13,4 +13,5 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: list files
-              run: cd mkdir
+              run: |
+                cd mkdir
