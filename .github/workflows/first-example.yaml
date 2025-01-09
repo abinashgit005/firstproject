@@ -22,9 +22,5 @@ jobs:
           run: |
             chmod +x script.sh
             ./script.sh
-    secondjob:
-      runs-on: ubuntu-latest
-      steps:
-        - name: list files
-          run: cd mkdir
+
 
