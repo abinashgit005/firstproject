@@ -18,5 +18,8 @@ jobs:
             echo "First Github action job"
             ls -lart
             cat README.md
-        
+        - name: running a script
+          run: |
+            chmod +x script.sh
+            ./script.sh
 
