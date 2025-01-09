@@ -9,3 +9,8 @@ jobs:
             - name: create directory
               run: |
                 mkdir abinash
+    job2:
+        runs-on: ubuntu-latest
+        steps:
+            - name: list files
+              run: cd mkdir
